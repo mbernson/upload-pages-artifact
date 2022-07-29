@@ -16,7 +16,7 @@ runs:
       shell: bash
       run: |
         tar \
-          --dereference --hard-dereference \
+          --dereference \
           --directory ${{ inputs.path }} \
           -cvf ${{ runner.temp }}/artifact.tar \
           --exclude=.git \
